@@ -1,4 +1,5 @@
 package com.xworkz.maping;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -26,8 +27,35 @@ public class MapCountryTester {
 			System.out.println(integer+" "+ref);
 			
 			}
-		
-		
+		Collection<Integer> values =countrynameAndPopulationMap.values();
+
+		System.out.println("Population");
+		Iterator<Integer> itrValue = values.iterator();
+		while (itrValue.hasNext()) {
+			Integer str = itrValue.next();
+			System.out.println(str);
+		}
+		System.out.println("***");
+		System.out.println("Country name printing");
+		Iterator<String> itrvalue = keySet.iterator();
+		while (itrvalue.hasNext()) {
+			String stringvalue = itrvalue.next();
+			System.out.println(stringvalue);
+		}
+		System.out.println("***");
+		System.out.println("country name&population printing");
+		Iterator<String> itr1 = keySet.iterator();
+		while (itr.hasNext()) {
+			String temp = itr.next();
+			Integer ref2 = countrynameAndPopulationMap.get(temp);
+			System.out.println(temp+ " " + ref2);
+		}
+		System.out.println("XXXX");
+		countrynameAndPopulationMap.remove("Singapur",5700000);
+		System.out.println(countrynameAndPopulationMap.size());
 	}
 
 }
+		
+		
+	

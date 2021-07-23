@@ -1,4 +1,6 @@
 package com.xworkz.maping;
+import java.util.Collection;
+
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -27,11 +29,41 @@ public class MapTesteer {
 			System.out.println(integer+" "+ref);
 			
 			}
+		Collection<Integer> values =AadharnoAndMobilenoMap.values();
 
-		
-		
-		
-
+		System.out.println("Mobile NUmber");
+		Iterator<Integer> itrValue = values.iterator();
+		while (itrValue.hasNext()) {
+			Integer str = itrValue.next();
+			System.out.println(str);
+		}
+		System.out.println("***");
+		System.out.println("Aadhar no printing");
+		Iterator<Integer> itrvalue = keySet.iterator();
+		while (itrvalue.hasNext()) {
+			Integer stringvalue = itrvalue.next();
+			System.out.println(stringvalue);
+		}
+		System.out.println("***");
+		System.out.println("Aadhar &Mobile no printing");
+		Iterator<Integer> itr1 = keySet.iterator();
+		while (itr.hasNext()) {
+			Integer temp = itr.next();
+			Integer ref2 = AadharnoAndMobilenoMap.get(temp);
+			System.out.println(temp+ " " + ref2);
+		}
+		System.out.println("XXXX");
+		AadharnoAndMobilenoMap.remove(963280233);
+		System.out.println(AadharnoAndMobilenoMap.size());
 	}
 
 }
+	
+
+		
+		
+		
+
+	
+
+

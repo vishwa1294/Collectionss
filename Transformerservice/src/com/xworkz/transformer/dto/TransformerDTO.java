@@ -15,15 +15,6 @@ public class TransformerDTO implements Serializable {
 		super();
 	}
 
-	/**
-	 * @param name
-	 * @param place
-	 * @param charcterType
-	 * @param happy
-	 * @param angry
-	 * @param sad
-	 * @param likeToDo
-	 */
 	public TransformerDTO(String name, String place, String charcterType, String happy, String angry, String sad,
 			String likeToDo) {
 		super();
